@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <script src="https://kit.fontawesome.com/93beaba2ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #FAFAFA;
+    }
+
+    .self-intro {
+      margin: 1rem 0;
+      border: 1px solid #AFB3B6;
+      border-radius: 5px;
+      padding: 1rem;
+      background-color: #FAFAFA;
+    }
+
+    .self-intro-top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .self-intro div img {
+      width: 12.5rem;
+      height: 12.5rem;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .self-intro div div {
+      display: block;
+      margin: 0 1rem;
+    }
+
+    .skills-section {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: FAFAFA;
+      border: 1px solid #AFB3B6;
+      border-radius: 5px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills div {
+      width: 30%;
+    }
+
+    .skills div h3 {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    .skills div p::before {
+      content: "- ";
+    }
+
+    .work-experience {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: FAFAFA;
+      border: 1px solid #AFB3B6;
+      border-radius: 5px;
+    }
+
+    .experience-card {
+      display: flex;
+    }
+
+    .experience-left {
+      display: block;
+      margin-right: 1rem;
+    }
+
+    .company {
+      display: flex;
+    }
+
+    .company div {
+      display: block;
+    }
+
+    .duration {
+      font-size: 1.25rem;
+    }
+
+    .work-experience div img {
+      width: 8rem;
+      height: 8rem;
+      margin: 0.5rem;
+      border: 0.5px solid #AFB3B6;
+    }
+
+    .experience {
+      width: 100%;
+    }
+
+    .experience ul {
+      padding-left: 1rem;
+    }
+
+    .experience ul li {
+      margin: 0.5rem;
+    }
+
+    .education-level {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #FAFAFA;
+      border: 1px solid #AFB3B6;
+      border-radius: 5px;
+    }
+
+    .education-card {
+      display: flex;
+    }
+
+    .education-card img {
+      width: 8rem;
+      height: 8rem;
+      margin: 0.5rem;
+      border: 0.5px solid #AFB3B6;
+    }
+
+    .education-card p,
+    .education-card h2 {
+      margin: 0;
+    }
+  </style>
+
+  <section class="self-intro">
+    <div class="self-intro-top">
+      <img src="https://i.imgur.com/uT3rHIk.png" alt="">
+      <div>
+        <h1>王品晟</h1>
+        <p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+          content
+          here', making it look like readable English. Many desktop publishing packages and web page editors now use
+          Lorem Ipsum
+          as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various
+          versions have evolved over the years, sometimes by accident, someti</p>
+      </div>
+    </div>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-phone"></i> : 0929-676-239</p>
+      <p><i class="fa-solid fa-envelope"></i> : r17369@gmail.com</p>
+    </div>
+  </section>
+  <section class="skills-section">
+    <h1>技能</h1>
+    <hr>
+    <div class="skills">
+      <div class="font-back-skills">
+        <h3>後端</h3>
+        <hr>
+        <p>Node.js</p>
+        <p>Express.js</p>
+        <p>MySQL (ORM:Sequelize)</p>
+        <p>MongoDB (ORM:Mongoose)</p>
+      </div>
+      <div class="font-end-skills">
+        <h3>前端</h3>
+        <hr>
+        <p>HTML﹑CSS</p>
+        <P>Javascript</P>
+        <p>Bootstrap</p>
+      </div>
+      <div class="other-skills">
+        <h3>其他</h3>
+        <hr>
+        <p>Git版本控管</p>
+      </div>
+    </div>
+  </section>
+  <section class="work-experience">
+    <h1>工作經歷</h1>
+    <hr>
+    <div class="experience-card">
+      <div class="experience-left">
+        <div class="company">
+          <img src="https://i.imgur.com/osQRBpf.png" alt="">
+          <div>
+            <h2>文中資訊股份有限公司</h2>
+            <p>提供公司商用軟體(ERP﹑HR…)﹑會計事務所從業軟體</p>
+          </div>
+        </div>
+        <p class="duration">Aug 2015 - May 2023</p>
+      </div>
+      <div class="experience">
+        <h3>主任軟體訓練師</h3>
+        <hr>
+        <ul>
+          <li class="experience-list">
+            即時性遠端協助客戶排除軟體操作問題。
+          </li>
+          <li class="experience-list">
+            擔任講師教導客戶使用軟體，協助客戶順利上線，共計約300多間企業。
+          </li>
+          <li class="experience-list">
+            聽取客戶需求，銷售標準版文中商用軟體。</br>若標準版不足，則跨部門將客戶需求完整表達給軟體發開部門，提供軟體客製化協助。
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="education-level">
+    <h1>學歷</h1>
+    <hr>
+    <div class="education-card">
+      <div>
+        <img src="https://i.imgur.com/veLxvYH.gif" alt="">
+        <p class="duration">Sep 2011 - Jun 2015</p>
+      </div>
+      <div>
+        <h2>台北商業大學</h2>
+        <p>(前台北商業技術學院)</p>
+        <h3>財政稅務系</h3>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
